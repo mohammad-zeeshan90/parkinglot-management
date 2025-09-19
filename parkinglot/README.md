@@ -102,8 +102,11 @@ GET /api/v1/users/tickets/{ticketId} → Get ticket info
 GET /api/v1/users/slots/availability → Check available slots
 
 Admin APIs (/api/v1/admin/**)
-PUT /api/v1/admin/pricing/{id} → Update pricing rules
+PUT /api/v1/admin/pricing/{id} → Update pricing rule
+DELETE /api/v1/admin/pricing/{id} → Delete pricing rule
 POST /api/v1/admin/pricing → Add new pricing rule
+POST /api/v1/admin/slots →  Add parking slot
+DELETE /api/v1/admin/slots/{slotId} -> Delete a parking slot
 
 
 Admin APIs are restricted and will return 403 Forbidden for non-admin users.
